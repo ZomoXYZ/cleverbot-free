@@ -69,7 +69,11 @@ module.exports = () => {
             console.log("on tor");
 
             resolve(function() {
-                return sendMessage(agent, ...arguments);
+                try {
+                    return sendMessage(agent, ...arguments);
+                } catch (err) {
+                    reject(err);
+                }
             });
 
         }).catch(reject);
