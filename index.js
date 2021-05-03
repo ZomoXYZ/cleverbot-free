@@ -62,10 +62,10 @@ async function sendMessage(agent, stimulus, context = [], language) {
     throw "Failed to get a response after 15 tries";
 }
 
-module.exports = (tor = createTorAgent) => {
+module.exports = () => {
     return new Promise((resolve, reject) => {
         console.log("running promise");
-        tor(msg => console.log(msg)).then(agent => {
+        createTorAgent(msg => console.log(msg)).then(agent => {
             console.log("on tor");
 
             resolve(function() {
