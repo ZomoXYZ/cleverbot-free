@@ -1,11 +1,16 @@
-# cleverbot-free
-Simple unofficial package to interact with the same API that the Cleverbot website uses for free.
+# cleverbot-free-anon
+Simple unofficial package to interact with the same API that the Cleverbot website uses for free, now running with Tor!
 
 ## **Please use the official Cleverbot API as the Cleverbot developers can easily break this package at any time.**
 
+## Requirements
+
+This package runs the `tor` cli, which has to be installed (and in your path).
+
 # Usage
 ```js
-const cleverbot = require("cleverbot-free");
+const cleverbot_tor = require("cleverbot-free-anon"),
+    cleverbot = await cleverbot_tor();
 
 // Without context
 cleverbot("Hello.").then(response => /*...*/);
