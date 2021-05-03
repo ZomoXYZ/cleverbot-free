@@ -11,7 +11,7 @@
         "brace-style": "error",
         "linebreak-style": [
             "error",
-            "windows"
+            "unix"
         ],
         "no-var": "error",
         "prefer-const": "error",
