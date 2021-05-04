@@ -76,6 +76,8 @@ module.exports = () => {
                 }
             });
 
+            setInterval(() => agent.changeIP(), 3e5); //5 minutes
+
         }).catch(reject);
     });
 };
