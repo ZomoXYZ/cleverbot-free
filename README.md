@@ -21,3 +21,5 @@ cleverbot("Bad.", ["Hi.", "How are you?"]).then(response => /*...*/);
 ```
 
 **Typings included**
+
+**I'm too lazy to fix the test file** it probably works but tor isnt installed in the test environment
